@@ -1,0 +1,298 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #f9f9f9;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-logho {
+  width: 50px;
+}
+
+.nav-title {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav ul li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-btn {
+  padding: 0.5rem 1rem;
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background: #e64a19;
+}
+
+/* Banner Section */
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background: linear-gradient(to right, #f9a825, #039be5);
+  color: #fff;
+}
+
+.banner-content {
+  max-width: 50%;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.banner-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.banner-description {
+  margin-bottom: 1.5rem;
+}
+
+.btn-dark {
+  padding: 0.5rem 1rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Standard Section */
+.standard-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.box-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.standard-content {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  flex: 1 1 calc(33% - 1rem);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.standard-content img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.standard-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blue {
+  background: #2196f3;
+  color: #fff;
+}
+
+.red {
+  background: #f44336;
+  color: #fff;
+}
+
+.green {
+  background: #4caf50;
+  color: #fff;
+}
+
+/* Stories Section */
+.bg-clr {
+  background: #f5f5f5;
+  padding: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-story {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(25% - 1rem);
+}
+
+/* Footer Section */
+/**
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-logo {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0.5rem 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons a img {
+  width: 30px;
+  margin-right: 1rem;
+  transition: opacity 0.3s;
+}
+
+.social-icons a img:hover {
+  opacity: 0.7;
+}*/
+/* Footer Section */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-column {
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff5722;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons a img {
+  width: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .box-container,
+  .row,
+  .card-container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-btn {
+    margin-top: 1rem;
+  }
+}
